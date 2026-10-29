@@ -1,0 +1,35 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Secrets and Keys
+*.key
+*.pem
+*.pub
+*.gpg
+*.asc
+.env
+.env.*
+
+# Configuration & Private Data
+04_MULTIMEDIA/3d/config.json
+AO-SECURE-VAULT/
+04_MULTIMEDIA/assets/private/
+04_MULTIMEDIA/assets/review/
+
+# Heavy or Technical Folders
+08_BLOCKCHAIN/lib/
+08_BLOCKCHAIN/out/
+08_BLOCKCHAIN/cache/
+03_FORGE/mcp/.venv/
+06_ARCHIVES/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Python / Node
+__pycache__/
+node_modules/
+venv/
