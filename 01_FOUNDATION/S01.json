@@ -1,0 +1,8 @@
+{
+  "sceau_id": "S01",
+  "timestamp_utc": "2026-10-27T14:59:05Z",
+  "emetteur": "Zacharie SYLLA / alpha0az1omega",
+  "provenance": "Terminal AO-01-CORE",
+  "objectif": "Session initiale: Fondations et securite",
+  "etat_courant": "GPG configure, repertoire cree, script alpha-init valide."
+}

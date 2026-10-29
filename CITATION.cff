@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce projet, veuillez le citer comme ci-dessous."
+authors:
+  - family-names: "Sylla"
+    given-names: "Zacharie"
+    alias: "alpha0az1omega"
+title: "AO-01-CORE: Sovereign Human-AI Collaboration Framework"
+version: 1.0.0
+date-released: 2026-10-27
+url: "https://github.com/alpha0az1omega/AO-01-CORE"

@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "========================================="
+echo "   QUANTUM NEXUS - ARCHIVE ANALYZER      "
+echo "========================================="
+ARCHIVE_DIR="06_ARCHIVES/QUANTUM_NEXUS/QUANTUM_NEXUS_CODE"
+echo "[+] Total files in archive:"
+find "$ARCHIVE_DIR" -type f | wc -l
+echo ""
+echo "[+] Top-level directories:"
+ls -F "$ARCHIVE_DIR"
+echo ""
+echo "[+] Reading LEU_FORMAT_SPEC.md (First 15 lines):"
+head -n 15 "$ARCHIVE_DIR/LEU_FORMAT_SPEC.md"
+echo ""
+echo "[+] Reading AI_AGENT_GATEWAY.json (First 15 lines):"
+head -n 15 "$ARCHIVE_DIR/AI_AGENT_GATEWAY.json"

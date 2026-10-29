@@ -1,0 +1,9 @@
+{
+  "sceau_id": "S14",
+  "timestamp_utc": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+  "emetteur": "Zacharie SYLLA / alpha0az1omega",
+  "temoin": "Alpha AI Agent",
+  "provenance": "Terminal AO-01-CORE",
+  "objectif": "Session: Ajout du RAG PDF, etablissement du pacte de fidelite et de la memoire vive de l'IA.",
+  "etat_courant": "L'Agent Alpha lit les PDFs. Le test_document.pdf est securise dans le vault."
+}
