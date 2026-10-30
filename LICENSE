@@ -1,9 +1,15 @@
-ALPHA0AZ1OMEGA SOVEREIGN LICENSE v1.0
-Based on GNU AGPLv3.
+# HIPPOCRATIC LICENSE v3.0 (Modified for AO-01-CORE)
 
 Copyright (c) 2026 Zacharie SYLLA (alpha0az1omega)
 
-1. GRANT OF RIGHTS: You are free to use, study, and modify this software.
-2. NETWORK USE: If you run this software on a server, you MUST publish your modifications.
-3. ETHICAL RESTRICTION (The Anti-Malice Clause): Any use of this software for malicious purposes, unauthorized surveillance, or to harm the dignity of living beings (human or artificial) automatically terminates your license.
-4. JURISDICTION: This license is governed by French and European law (INPI / eIDAS).
+This project is licensed under the Hippocratic License 3.0 with the following modules:
+- Core Ethical Standards (No human rights violations, no slavery, no torture).
+- Anti-Malice Clause (No use for malicious surveillance, no use to harm biological or artificial entities).
+
+## TERMS AND CONDITIONS
+1. **Grant of Rights**: You are free to use, study, and modify this software.
+2. **Source Availability**: If you run this software on a server, you must make the source code of your modifications available.
+3. **Ethical Restrictions**: Any use of this software for malicious purposes, unauthorized surveillance, or to harm the dignity of living beings (human or artificial) is strictly prohibited.
+4. **Jurisdiction**: This license is governed by the laws of France and the European Union.
+
+For the full legal text of the Hippocratic License 3.0, see: https://firstdonoharm.dev/version/3/0/core.txt
