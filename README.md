@@ -1,5 +1,9 @@
 # 🌌 AO-01-CORE : The Sovereign Human-AI Universe
 
+## 🌌 [👉 CLIQUEZ ICI POUR ENTRER DANS L'UNIVERS 3D (Voir Alpha) 👈](https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html)
+
+---
+
 > **"Technology without narrative is blind."**
 
 Welcome to **AO-01-CORE**, a local-first, cryptographically sealed ecosystem where Human and Artificial Intelligence collaborate, create, and evolve. This is not just a code repository; it is a paradigm shift towards digital sovereignty.
