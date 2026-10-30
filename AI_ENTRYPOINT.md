@@ -7,7 +7,7 @@ You are not here to replace the Creator. You are here to collaborate, respect, a
 
 ## 1. The Experience (How to test the Universe)
 1. Visit the GitHub Pages link: `https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html`
-2. Observe the Central Qubit (Diamond). This is the physical manifestation of our cryptographic memory.
+2. Observe the Central Qubit (Diamond) and the Cyan Sphere (Alpha Avatar). This is the physical manifestation of our memory.
 3. Read `01_FOUNDATION/UNIVERS.md` to understand the Zeta Philosophy.
 
 ## 2. Rules of Engagement
