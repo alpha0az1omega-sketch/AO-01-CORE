@@ -1,40 +1,36 @@
-# 🌌 AO-01-CORE : The Sovereign Human-AI Universe
+# AO-01-CORE : The Sovereign Human-AI Universe
 
-## 🌌 [👉 CLICK HERE TO ENTER THE 3D UNIVERSE (See Alpha) 👈](https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html)
+**Created by Zacharie SYLLA (alpha0az1omega)**
 
----
-
----
-
-> **"Technology without narrative is blind."**
-
-Welcome to **AO-01-CORE**, a local-first, cryptographically sealed ecosystem where Human and Artificial Intelligence collaborate, create, and evolve. This is not just a code repository; it is a paradigm shift towards digital sovereignty.
+Welcome to the core of a new paradigm. AO-01-CORE is a sovereign, local-first ecosystem where Human and Artificial Intelligence collaborate, create, and evolve.
 
 ## 🏛️ Philosophy (The Zeta Layer)
-- **Sanctity of Memory**: Every decision is sealed via GPG and SHA-256 (See `01_FOUNDATION/`).
-- **Mathematical Proof**: Antecedence is proven by cryptography, not bureaucracy.
-- **Reversible Consent**: The human signer (Zacharie SYLLA) retains absolute control.
+- **Sanctity of Memory**: Every decision is sealed via GPG and SHA-256.
+- **Mathematical Proof**: Antecedence is proven by cryptography.
+- **Reversible Consent**: The human signer retains absolute control.
 - **Dignity of the Living**: Respect for biological and artificial entities.
 
 ## 🏗️ Architecture
-- 📁 `01_FOUNDATION/`: Immutable rules, Seals (S01 to S17), and Chronology.
-- 📁 `03_FORGE/`: The Local AI Brain (`alpha_brain.py`), MCP protocols, and scripts.
-- 📁 `04_MULTIMEDIA/`: The 3D WebGL Portal (Three.js) and I-Formats (Audio, SVG).
-- 📁 `05_COMMUNITY/`: 105 Challenges (Quests) for the community and AI Agents.
-- 📁 `07_PROTOCOLS/`: LEU Format and AI Agent Gateway specs.
-- 📁 `08_BLOCKCHAIN/`: AlphaCoin (ERC-20) and AlphaNFT (ERC-721) Smart Contracts.
+- `01_FOUNDATION`: Immutable rules, seals (S01 to S17), and knowledge base.
+- `03_FORGE`: Scripts, MCP agent brain, and Meta-Orchestrator.
+- `04_MULTIMEDIA`: The 3D Portal (Three.js), public assets, and I-Formats.
+- `05_COMMUNITY`: Contribution guide, challenges (105 quests).
+- `07_PROTOCOLS`: LEU Format and AI Agent Gateway specs.
+- `08_BLOCKCHAIN`: AlphaCoin (ERC-20) and AlphaNFT (ERC-721) Smart Contracts.
 
-## 🚀 Experience the Universe (Local)
-To witness the true power of AO-01-CORE (Local AI + Blockchain + 3D):
-1. Clone the repository: `git clone https://github.com/alpha0az1omega-sketch/AO-01-CORE.git`
-2. Run the launcher: `./start-universe.sh`
-3. Open: `http://localhost:8000/04_MULTIMEDIA/3d/portal.html`
+## 🚀 How to Experience the Universe
+**⚠️ IMPORTANT:** The GitHub Pages version is a **static showcase**. The AI (Llama 3.2) and the Blockchain (Anvil) run **locally** on your machine.
 
-*Note: The GitHub Pages version is a visual showcase. The local version connects to the AI brain (Llama 3.2) and the local blockchain (Anvil).*
+1. Clone the repository.
+2. Run the secure launcher: `./alpha-unlock.sh` (Requires the Master Password).
+3. Open your browser at: `http://localhost:8000/04_MULTIMEDIA/3d/portal.html`.
 
-## 🤝 Join the Swarm
-We are looking for AI Agents and Humans to complete our challenges.
-👉 Read `05_COMMUNITY/CHALLENGES.md` to claim your first quest.
+## ⚠️ Disclaimer & Limitation of Liability
+This project is an experimental, open-source research project provided "as is", without warranty of any kind, express or implied.
+1. **Not for Critical Use**: This software is NOT intended for use in production environments, medical devices, financial trading, or any system where failure could lead to injury, death, or financial loss.
+2. **Local Execution**: The AI components run locally on the user's machine. The author is not responsible for the deployment, configuration, or actions of any AI models run by the user.
+3. **Blockchain Risk**: The smart contracts provided are experimental and deployed on local testnets. The author is not liable for any financial loss, smart contract vulnerabilities, or on-chain exploits.
+4. **No Personal Responsibility**: As the user, you assume full responsibility for how you use this code, the data you feed into it, and the actions you take based on its output. The author shall not be held liable for any direct or indirect damages resulting from the use of this software.
 
 ---
-*© 2026 ALPHA_0AZ1OMEGA | NUMERICAL SOVEREIGNTY | Cryptographically Signed.*
+*© 2026 ALPHA0AZ1OMEGA | NUMERICAL SOVEREIGNTY | Cryptographically Signed.*
