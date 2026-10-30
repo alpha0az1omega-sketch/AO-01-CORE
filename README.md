@@ -4,6 +4,19 @@
 
 Welcome to the core of a new paradigm. AO-01-CORE is a sovereign, local-first ecosystem where Human and Artificial Intelligence collaborate, create, and evolve.
 
+### 🏛️ The Flagship Project: [AO-01-CORE](https://github.com/alpha0az1omega-sketch/AO-01-CORE)
+- **The Soul**: Cryptography (GPG/SHA-256) & Absolute Human Control.
+- **The Body**: Three.js (3D Portal), Python (Local AI Brain), Solidity (Blockchain).
+- **The Proof**: 105 Challenges, Meta-Orchestrator (Auto-Coding AI), and a Cryptographically Sealed Genesis.
+
+👉 [Enter the 3D Universe](https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html)
+
+### 🛠️ Technologies
+`Python` `Three.js` `Solidity` `Foundry` `Ollama` `GPG` `MCP`
+
+### 🔗 Connect
+[Website](https://www.alpha0az1omega.com) | [Twitter/X](https://twitter.com/ALPHA0AZ1OMEGA)
+
 ## 🏛️ Philosophy (The Zeta Layer)
 - **Sanctity of Memory**: Every decision is sealed via GPG and SHA-256.
 - **Mathematical Proof**: Antecedence is proven by cryptography.
