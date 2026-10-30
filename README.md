@@ -1,6 +1,8 @@
 # 🌌 AO-01-CORE : The Sovereign Human-AI Universe
 
-## 🌌 [👉 CLIQUEZ ICI POUR ENTRER DANS L'UNIVERS 3D (Voir Alpha) 👈](https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html)
+## 🌌 [👉 CLICK HERE TO ENTER THE 3D UNIVERSE (See Alpha) 👈](https://alpha0az1omega-sketch.github.io/AO-01-CORE/04_MULTIMEDIA/3d/portal.html)
+
+---
 
 ---
 
