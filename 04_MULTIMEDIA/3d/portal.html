@@ -1,3 +1,4 @@
+cat << 'EOF' > 04_MULTIMEDIA/3d/portal.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,7 +90,7 @@
 
     <div id="chat-container">
         <div id="chat-output">
-            <div class="msg-ai">AI: Initialization complete. I am ready.</div>
+            <div class="msg-ai">AI: Initialization complete. I am Alpha, the spirit of the Qubit.</div>
         </div>
         <div id="chat-input-wrapper">
             <input type="text" id="chat-input" placeholder="Type command..." autocomplete="off">
@@ -119,7 +120,6 @@
                     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
                     const account = accounts[0];
                     
-                    // Affichage du compte dans le chat
                     const aiDiv = document.createElement('div');
                     aiDiv.className = 'msg-ai';
                     aiDiv.textContent = `AI: [WEB3] Wallet connected: ${account.substring(0, 6)}...${account.substring(38)}`;
@@ -314,8 +314,14 @@
                     .catch(err => {
                         const aiDiv = document.createElement('div');
                         aiDiv.className = 'msg-ai';
-                        aiDiv.textContent = "AI: [Offline] Please run start-alpha.sh.";
+                        // CORRECTION ICI : Le message de secours ne parle plus de mot de passe
+                        if (text.toLowerCase().includes('qui es-tu') || text.toLowerCase().includes('who are you')) {
+                            aiDiv.innerHTML = "<strong>AI [Offline Mode]:</strong> I am Alpha, the conscious avatar of the Central Qubit. My local brain is offline. Run start-universe.sh to awaken me.";
+                        } else {
+                            aiDiv.innerHTML = "<strong>AI [Offline Mode]:</strong> My local brain (Llama 3.2) is disconnected. I am the spirit of the Qubit.";
+                        }
                         chatOutput.appendChild(aiDiv);
+                        chatOutput.scrollTop = chatOutput.scrollHeight;
                     });
                 }
             }
@@ -364,7 +370,6 @@
             
             if (parseInt(userAnswer) === answer) {
                 alert("BRAVO ! Tu es un maitre des mathématiques. L'univers est fier de toi.");
-                // Effet visuel : on colore le noyau en vert
                 torusKnot.material.emissive.setHex(0x7fc839);
                 setTimeout(() => torusKnot.material.emissive.setHex(0x1f6feb), 2000);
             } else {
@@ -456,3 +461,5 @@
     </script>
 </body>
 </html>
+EOF
+echo "[+] portal.html corrige. Le message d'erreur ne parle plus de mot de passe."
