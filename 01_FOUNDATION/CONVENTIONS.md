@@ -4,7 +4,6 @@
 - **Code, Comments & Documentation**: English (Universal standard for AI, developers, and open-source collaboration).
 - **Variable Naming**: camelCase for variables, PascalCase for classes.
 - **File Naming**: kebab-case (e.g., generate-sceau.sh).
-- **AI & Human Interaction**: Any communication intended for the public repository must be in English.
 
 ## 2. Time & Date
 - All timestamps must be in UTC and ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
