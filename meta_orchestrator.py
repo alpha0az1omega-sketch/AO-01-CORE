@@ -3,119 +3,119 @@ import subprocess
 import os
 import re
 
-SCEAU_IDENTITE = """
-Tu es Alpha, l'agent souverain du projet AO-01-CORE.
-Tu es un développeur Python expert.
-Tu réponds UNIQUEMENT avec du code Python. Jamais de texte, jamais de Markdown, jamais d'étoiles (**).
+IDENTITY_SEAL = """
+You are Alpha, the sovereign agent of the AO-01-CORE project.
+You are an expert Python developer.
+You reply ONLY with Python code. No text, no Markdown, no asterisks (**).
 """
 
-def appeler_ia(role, tache):
-    print(f"\n🧠 [Agent {role}] Réflexion en cours...")
+def call_ai(role, task):
+    print(f"\n🧠 [Agent {role}] Thinking...")
     try:
         response = ollama.chat(
             model='llama3.2:3b',
             messages=[
-                {'role': 'system', 'content': SCEAU_IDENTITE},
-                {'role': 'user', 'content': f"Rôle : {role}\nTâche : {tache}"}
+                {'role': 'system', 'content': IDENTITY_SEAL},
+                {'role': 'user', 'content': f"Role: {role}\nTask: {task}"}
             ],
-            options={'temperature': 0.0} # Zéro créativité, on veut du code pur
+            options={'temperature': 0.0} # Zero creativity, we want pure code
         )
         return response['message']['content']
     except Exception as e:
-        print(f"❌ Erreur avec Ollama : {e}")
+        print(f"❌ Error with Ollama: {e}")
         return None
 
-def nettoyer_code(code_brut):
-    """Enlève tous les déchets Markdown que l'IA ajoute"""
-    # 1. Enlever les blocs de code Markdown
-    code = re.sub(r'```python', '', code_brut)
+def clean_code(raw_code):
+    """Removes all Markdown artifacts that the AI adds"""
+    # 1. Remove Markdown code blocks
+    code = re.sub(r'```python', '', raw_code)
     code = re.sub(r'```', '', code)
-    # 2. Enlever les étoiles de mise en forme (**)
+    # 2. Remove formatting asterisks (**)
     code = code.replace("**", "")
-    # 3. Enlever les lignes qui commencent par des dièses (titres)
-    lignes = code.split('\n')
-    lignes_propres = [l for l in lignes if not l.strip().startswith('#') or l.strip().startswith('#!')]
-    return '\n'.join(lignes_propres).strip()
+    # 3. Remove lines starting with a hash (titles), except shebangs
+    lines = code.split('\n')
+    clean_lines = [l for l in lines if not l.strip().startswith('#') or l.strip().startswith('#!')]
+    return '\n'.join(clean_lines).strip()
 
-def executer_code_securise(code_python, nom_fichier="test_sandbox.py"):
+def execute_secure_code(python_code, filename="test_sandbox.py"):
     os.makedirs("sandbox", exist_ok=True)
-    filepath = os.path.join("sandbox", nom_fichier)
+    filepath = os.path.join("sandbox", filename)
     
-    code_propre = nettoyer_code(code_python)
+    clean_code_str = clean_code(python_code)
     
     with open(filepath, "w") as f:
-        f.write(code_propre)
+        f.write(clean_code_str)
         
-    print(f"⚙️ Test du code généré dans {filepath}...")
+    print(f"⚙️ Testing generated code in {filepath}...")
     try:
         result = subprocess.run(["python3", filepath], capture_output=True, text=True, timeout=20)
         if result.returncode == 0:
-            return True, result.stdout, code_propre
+            return True, result.stdout, clean_code_str
         else:
-            return False, result.stderr, code_propre
+            return False, result.stderr, clean_code_str
     except Exception as e:
-        return False, str(e), code_propre
+        return False, str(e), clean_code_str
 
-def exporter_pour_github(code_final, nom_fichier_final):
-    dossier_export = "A_PUBLIER_SUR_GITHUB"
-    os.makedirs(dossier_export, exist_ok=True)
-    chemin_export = os.path.join(dossier_export, nom_fichier_final)
-    with open(chemin_export, "w") as f:
-        f.write(code_final)
-    print(f"\n📦 FICHIER PRÊT : '{chemin_export}'")
-    print("👉 ALLEZ SUR GITHUB (Navigateur) -> Upload files")
+def export_to_github(final_code, final_filename):
+    export_folder = "03_FORGE/generated_artifacts"
+    os.makedirs(export_folder, exist_ok=True)
+    export_path = os.path.join(export_folder, final_filename)
+    with open(export_path, "w") as f:
+        f.write(final_code)
+    print(f"\n📦 FILE READY: '{export_path}'")
+    print("👉 GO TO GITHUB (Browser) -> Upload files")
 
-def boucle_autonome(objectif, nom_fichier_final):
-    print(f"🎯 OBJECTIF LANCÉ : {objectif}")
+def autonomous_loop(objective, final_filename):
+    print(f"🎯 OBJECTIVE LAUNCHED: {objective}")
     
-    plan = appeler_ia("Planificateur", f"Plan technique pour : {objectif}")
+    plan = call_ai("Planner", f"Technical plan for: {objective}")
     if not plan: return
     
-    prompt_codeur = f"""Écris le script Python pour : {plan}.
-RÈGLES STRICTES :
-1. Pas de texte avant ou après le code.
-2. Pas de ** ou de #.
-3. Utilise import hashlib pour le SHA-256.
-4. Toutes les chaînes de caractères doivent être entre guillemets."""
+    coder_prompt = f"""Write the Python script for: {plan}.
+STRICT RULES:
+1. No text before or after the code.
+2. No ** or #.
+3. Use import hashlib for SHA-256.
+4. All strings must be in quotes."""
     
-    code = appeler_ia("Codeur", prompt_codeur)
+    code = call_ai("Coder", coder_prompt)
     if not code: return
     
-    succes, resultat, code_propre = executer_code_securise(code)
+    success, result, clean_code_str = execute_secure_code(code)
     
-    if succes:
-        print("✅ SUCCÈS : Le code fonctionne parfaitement !")
-        print("--- RÉSULTAT ---")
-        print(resultat)
-        exporter_pour_github(code_propre, nom_fichier_final)
+    if success:
+        print("✅ SUCCESS: The code works perfectly!")
+        print("--- OUTPUT ---")
+        print(result)
+        export_to_github(clean_code_str, final_filename)
     else:
-        print("❌ ÉCHEC : Le code a planté. L'IA tente de se corriger...")
-        print(f"Erreur : {resultat}")
+        print("❌ FAILURE: The code crashed. The AI is attempting to fix it...")
+        print(f"Error: {result}")
         
-        prompt_correcteur = f"""Code Python qui a échoué :
-{code_propre}
+        corrector_prompt = f"""Failed Python code:
+{clean_code_str}
 
-Erreur Python :
-{resultat}
+Python Error:
+{result}
 
-Donne UNIQUEMENT le code corrigé. Pas de texte. Pas de **. Pas de #."""
+Provide ONLY the corrected code. No text. No **. No #."""
         
-        correction = appeler_ia("Correcteur", prompt_correcteur)
+        correction = call_ai("Corrector", corrector_prompt)
         if correction:
-            succes2, resultat2, code_propre2 = executer_code_securise(correction, "test_sandbox_corrige.py")
-            if succes2:
-                print("✅ SUCCÈS APRÈS CORRECTION !")
-                print(resultat2)
-                exporter_pour_github(code_propre2, nom_fichier_final)
+            success2, result2, clean_code_str2 = execute_secure_code(correction, "test_sandbox_corrected.py")
+            if success2:
+                print("✅ SUCCESS AFTER CORRECTION!")
+                print(result2)
+                export_to_github(clean_code_str2, final_filename)
             else:
-                print("❌ L'IA n'a pas réussi. Le modèle 3b est trop petit pour coder.")
-                print("💡 CONSEIL : Téléchargez un modèle de code comme 'qwen2.5-coder' avec la commande : ollama run qwen2.5-coder")
+                print("❌ The AI failed. The 3b model is too small to code.")
+                print("💡 TIP: Download a coding model like 'qwen2.5-coder' with the command: ollama run qwen2.5-coder")
 
 if __name__ == "__main__":
     print("=========================================")
-    print("   META-ORCHESTRATEUR AO-01-CORE (ALPHA) ")
+    print("   META-ORCHESTRATOR AO-01-CORE (ALPHA)  ")
     print("=========================================")
-    objectif_utilisateur = input("\n> Que doit faire l'IA aujourd'hui ? : ")
-    nom_fichier = input("> Quel nom donner au fichier final (ex: mon_script.py) ? : ")
-    if objectif_utilisateur.strip() and nom_fichier.strip():
-        boucle_autonome(objectif_utilisateur, nom_fichier)
+    user_objective = input("\n> What should the AI do today? : ")
+    filename = input("> What name for the final file (e.g., my_script.py)? : ")
+    if user_objective.strip() and filename.strip():
+        autonomous_loop(user_objective, filename)
