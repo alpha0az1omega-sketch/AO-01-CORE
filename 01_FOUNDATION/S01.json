@@ -1,8 +1,8 @@
 {
-  "sceau_id": "S01",
+  "seal_id": "S01",
   "timestamp_utc": "2026-10-27T14:59:05Z",
-  "emetteur": "Zacharie SYLLA / alpha0az1omega",
-  "provenance": "Terminal AO-01-CORE",
-  "objectif": "Session initiale: Fondations et securite",
-  "etat_courant": "GPG configure, repertoire cree, script alpha-init valide."
+  "issuer": "Zacharie SYLLA / alpha0az1omega",
+  "source": "AO-01-CORE Terminal",
+  "objective": "Initial session: Foundations and security",
+  "current_state": "GPG configured, directory created, alpha-init script validated."
 }
