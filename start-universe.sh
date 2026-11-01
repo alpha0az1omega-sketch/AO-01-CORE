@@ -1,33 +1,34 @@
 #!/bin/bash
+
 echo "========================================="
-echo "   LANCEMENT DE L'UNIVERS AO-01-CORE     "
+echo "   LAUNCHING AO-01-CORE UNIVERSE         "
 echo "========================================="
 
-# 1. Nettoyage des anciens processus
+# 1. Clean up old processes
 lsof -ti:8000 | xargs kill -9 2>/dev/null
 lsof -ti:8001 | xargs kill -9 2>/dev/null
 lsof -ti:8545 | xargs kill -9 2>/dev/null
 
-# 2. Lancement de la Blockchain (Anvil)
+# 2. Launch Local Blockchain (Anvil)
 nohup anvil > /tmp/anvil.log 2>&1 &
-echo "[+] Blockchain Locale (Anvil) demarree."
+echo "[+] Local Blockchain (Anvil) started."
 
-# 3. Lancement du Serveur Web
+# 3. Launch Web Server
 nohup python3 -m http.server 8000 > /tmp/alpha_web.log 2>&1 &
-echo "[+] Serveur Web demarre."
+echo "[+] Web Server started."
 
-# 4. Lancement de l'Agent Alpha (en utilisant le venv)
+# 4. Launch Alpha Agent (using venv)
 nohup 03_FORGE/mcp/.venv/bin/python3 03_FORGE/agent/alpha_brain.py > /tmp/alpha_brain.log 2>&1 &
-echo "[+] Agent Alpha demarre."
+echo "[+] Alpha Agent started."
 
-# 5. Prévention de la veille (Mac)
+# 5. Prevent Sleep Mode (Mac)
 nohup caffeinate -d -i > /dev/null 2>&1 &
-echo "[+] Prevention de la veille activee."
+echo "[+] Sleep Prevention activated."
 
-# 6. Ouverture du portail dans le navigateur
+# 6. Open portal in browser
 sleep 2
 open http://localhost:8000/04_MULTIMEDIA/3d/portal.html
 
 echo "========================================="
-echo "   UNIVERS LANCE. A VOUS DE JOUER.       "
+echo "   UNIVERSE LAUNCHED. AWAITING COMMAND.  "
 echo "========================================="
