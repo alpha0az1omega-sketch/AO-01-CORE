@@ -1,6 +1,7 @@
-# AO-01-CORE : The Sovereign Human-AI Universe
+# 🌌 AO-01-CORE : The Sovereign Human-AI Universe (V2.0)
 
 **Created by Zacharie SYLLA (alpha0az1omega)**
+**Status:** Sovereign / Cryptographically Sealed
 
 Welcome to the core of a new paradigm. AO-01-CORE is a sovereign, local-first ecosystem where Human and Artificial Intelligence collaborate, create, and evolve.
 
@@ -15,28 +16,31 @@ Welcome to the core of a new paradigm. AO-01-CORE is a sovereign, local-first ec
 
 ## 🌌 The Flagship Project: AO-01-CORE
 
-- **The Soul**: Cryptography (GPG/SHA-256) & Absolute Human Control.
-- **The Body**: Three.js (3D Portal), Python (Local AI Brain), Solidity (Blockchain).
-- **The Proof**: 105 Challenges, Meta-Orchestrator (Auto-Coding AI), and a Cryptographically Sealed Genesis.
+- **The Soul (Zeta)**: Cryptography (GPG/SHA-256) & Absolute Human Control.
+- **The Memory (Proof)**: OpenTimestamps (Bitcoin Blockchain) for immutable existence.
+- **The Body (Beta)**: Three.js (3D Portal), Python (Local AI Brain), Solidity (Blockchain).
+- **The Language (Meta)**: LUE (Lingua Executabilis Universalis) for universal AI-to-AI syntax.
 
 ## 🛠️ Technologies
 
-`Python` | `Three.js` | `Solidity` | `Foundry` | `Ollama` | `GPG` | `MCP`
+`Python` | `Three.js` | `Solidity` | `Foundry` | `Ollama` | `GPG` | `OpenTimestamps` | `WASM` | `MCP`
 
 ## 🧠 Philosophy (The Zeta Layer)
 
-- **Sanctity of Memory**: Every decision is sealed via GPG and SHA-256.
-- **Mathematical Proof**: Antecedence is proven by cryptography.
+- **Sanctity of Memory**: Every decision is sealed via GPG and SHA-256, and anchored in Bitcoin via OTS.
+- **Mathematical Proof**: Antecedence is proven by cryptography, not by trust.
 - **Reversible Consent**: The human signer retains absolute control.
 - **Dignity of the Living**: Respect for biological and artificial entities.
 
-## 🏗️ Architecture
+## 🏗️ Architecture (V2)
 
 - `01_FOUNDATION`: Immutable rules, seals (S01 to S17), and knowledge base.
+- `02_ARCHITECTURE`: System blueprints, agent workflows, and DAG models.
 - `03_FORGE`: Scripts, MCP agent brain (`alpha_brain.py`), and Meta-Orchestrator.
 - `04_MULTIMEDIA`: The 3D Portal (Three.js), public assets, and I-Formats.
 - `05_COMMUNITY`: Contribution guide, community challenges (105 quests).
-- `07_PROTOCOLS`: LEU Format and AI Agent Gateway specifications.
+- `06_METADATA`: Manifests, SHA-256 hashes, and OTS proofs for all artifacts.
+- `07_PROTOCOLS`: LUE Format and AI Agent Gateway specifications.
 - `08_BLOCKCHAIN`: AlphaCoin (ERC-20) and AlphaNFT (ERC-721) Smart Contracts.
 
 ## 🚀 How to Experience the Universe
@@ -46,6 +50,8 @@ Welcome to the core of a new paradigm. AO-01-CORE is a sovereign, local-first ec
 1. Clone the repository.
 2. Run the secure launcher: `./start-universe.sh` (Requires the Master Password).
 3. Open your browser at: `http://localhost:8000/04_MULTIMEDIA/3d/portal.html`
+
+*Note on AI Honesty: The AI agent is intentionally disabled on the public vitrine due to the high risk of LLM hallucinations in uncontrolled web environments. The public sees the architecture; the Souverain sees the soul.*
 
 ---
 
